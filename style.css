@@ -1,0 +1,19 @@
+body{
+    background-color: #c15614;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+#image-container {
+    display: inline-block;
+    margin: 20px;
+}
+audio {
+    display: block;
+    margin-top: 20px;
+    margin-left: 615px;
+}
+
+h1{
+    color: black;
+}
