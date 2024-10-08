@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Jay Shree Ram</title>
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Shree Ram</title>
+    <style>
+        .pdf-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pdf-container .pdf-wrapper {
+            flex: 1;
+            margin-right: 10px; /* Adjust margin between PDFs */
+        }
+        .pdf-container embed {
+            width: 100%; /* Use 100% width within the wrapper */
+            height: 400px;
+        }
+        .content {
+            margin-bottom: 20px; /* Add space below the content */
+        }
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .audio-container audio {
+            margin: 0 10px; /* Adjust margin between audio controls */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
         <h1>Jay Shree Ram &#x1F64F;</h1>
         <div id="image-container">
             <img src="Ram.jpeg" alt="Shree Ram">
         </div>
-        <p>Raghupati Raghav Raja Ram</p>
-        <audio controls loop>
-            <source src="raghu.mp3" type="audio/mp3">
-        </audio>
-        <p>Shree Ram Jay Ram Jay Jay Ram</p>
-        <audio controls loop>
-            <source src="shree.mp3" type="audio/mp3">
-        </audio>
+        <div class="audio-container">
+            <p>Raghupati Raghav     </p>
+            <audio controls loop>
+                <source src="raghu.mp3" type="audio/mp3">
+            </audio>
+            <p>Ram Dhun</p>
+            <audio controls loop>
+                <source src="shree.mp3" type="audio/mp3">
+            </audio>
+        </div>
         <script src="script.js"></script>
-    </body>
+    </div>
+
+    <hr> <!-- Add a horizontal line between content and PDFs -->
+
+    <div class="pdf-container">
+        <div class="pdf-wrapper">
+            <h3>Swami Samarth</h3>
+            <embed src="swami_samarth.pdf" type="application/pdf"/>
+        </div>
+        <div class="pdf-wrapper">
+            <h3>Saptashati</h3>
+            <embed src="Saptashati.pdf" type="application/pdf"/>
+        </div>
+        <div class="pdf-wrapper">
+            <h3>Kakda</h3>
+            <embed src="Kakda.pdf" type="application/pdf"/>
+        </div>
+    </div>
+</body>
 </html>
